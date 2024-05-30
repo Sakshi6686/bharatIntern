@@ -1,0 +1,88 @@
+/* styles.css */
+
+/* Body styling */
+body {
+    background-image: url('https://images.unsplash.com/photo-1565372910174-8501a3d26d46?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Form styling */
+#expense-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.input-section .form-control {
+    margin-bottom: 15px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: rgb(242, 73, 129);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-section button:hover {
+    background-color: rgb(220, 50, 100);
+}
+
+/* Table styling */
+.expenses-list {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.table {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.thead-dark th {
+    background-color: rgb(246, 75, 28) !important;
+    color: rgb(253, 253, 250) !important;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: rgb(198, 69, 69);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: rgb(170, 50, 50);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #expense-form, .expenses-list {
+        width: 90%;
+    }
+}
